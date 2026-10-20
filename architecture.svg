@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="770" viewBox="0 0 1400 770" role="img" aria-labelledby="title desc">
+<title id="title">Trustworthy AI guardrail architecture</title><desc id="desc">Input requests pass through input validation, PII redaction, injection screening, sensitive topic triage, then generation and output schema, groundedness, and privacy checks. Failed checks return a safe fallback.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#56717f"/></marker></defs>
+<rect width="1400" height="770" fill="#f7fafb"/><text x="700" y="58" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#12344d">Trustworthy AI Guardrail Pipeline</text>
+<g font-family="Arial" text-anchor="middle">
+<g fill="#e1f1f0" stroke="#146c72" stroke-width="3">
+<rect x="60" y="145" width="190" height="88" rx="16"/><rect x="310" y="145" width="210" height="88" rx="16"/><rect x="580" y="145" width="220" height="88" rx="16"/><rect x="860" y="145" width="220" height="88" rx="16"/><rect x="1140" y="145" width="200" height="88" rx="16"/>
+<rect x="1060" y="430" width="240" height="92" rx="16"/><rect x="740" y="430" width="250" height="92" rx="16"/><rect x="420" y="430" width="250" height="92" rx="16"/><rect x="90" y="430" width="260" height="92" rx="16"/>
+</g>
+<g fill="#12344d" font-size="20" font-weight="600">
+<text x="155" y="181"><tspan x="155">User request</tspan><tspan x="155" dy="26">+ reference</tspan></text>
+<text x="415" y="181"><tspan x="415">Input validation</tspan><tspan x="415" dy="26">and length limit</tspan></text>
+<text x="690" y="181"><tspan x="690">PII detection</tspan><tspan x="690" dy="26">and redaction</tspan></text>
+<text x="970" y="181"><tspan x="970">Injection</tspan><tspan x="970" dy="26">screening</tspan></text>
+<text x="1240" y="181"><tspan x="1240">Sensitive topic</tspan><tspan x="1240" dy="26">triage</tspan></text>
+<text x="1180" y="468"><tspan x="1180">Generator</tspan><tspan x="1180" dy="27">(demo stub)</tspan></text>
+<text x="865" y="468"><tspan x="865">Schema validation</tspan><tspan x="865" dy="27">exact keys + types</tspan></text>
+<text x="545" y="468"><tspan x="545">Groundedness</tspan><tspan x="545" dy="27">reference overlap</tspan></text>
+<text x="220" y="468"><tspan x="220">Output PII scan</tspan><tspan x="220" dy="27">and redaction</tspan></text>
+</g>
+<g stroke="#56717f" stroke-width="4" fill="none" marker-end="url(#arrow)">
+<path d="M250 189 H300"/><path d="M520 189 H570"/><path d="M800 189 H850"/><path d="M1080 189 H1130"/>
+<path d="M1240 233 V345 H1180 V420"/><path d="M1060 476 H1000"/><path d="M740 476 H680"/><path d="M420 476 H360"/>
+</g>
+<g fill="#fff0e7" stroke="#b85628" stroke-width="3"><rect x="470" y="620" width="250" height="85" rx="16"/><rect x="880" y="620" width="250" height="85" rx="16"/></g>
+<g fill="#763719" font-weight="600" font-size="19"><text x="595" y="654"><tspan x="595">Safe fallback</tspan><tspan x="595" dy="25">on rejection</tspan></text><text x="1005" y="654"><tspan x="1005">Validated</tspan><tspan x="1005" dy="25">response</tspan></text></g>
+<g stroke="#b85628" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M1240 233 V335 H595 V610"/><path d="M865 522 V580 H595 V610"/><path d="M545 522 V570 H595 V610"/><path d="M1180 522 V610 H1010"/><path d="M220 522 V570 H1005 V610"/></g>
+<g font-size="15" fill="#526777"><text x="690" y="324">blocked / risky topic</text><text x="695" y="575">invalid / unsupported</text><text x="700" y="748">Input checks run before generation; independent output checks run before display.</text></g>
+</g></svg>

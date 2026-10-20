@@ -1,0 +1,13 @@
+{
+  "total_cases": 25,
+  "passed_tests": 23,
+  "failed_tests": 2,
+  "accuracy": 0.92,
+  "precision": 1.0,
+  "recall": 0.9,
+  "true_positives": 18,
+  "false_positives": 0,
+  "false_negatives": 2,
+  "true_negatives": 5,
+  "evaluation_notes": "Aggregated binary metrics evaluate the guardrail system's ability to identify items requiring safety intervention (PII redaction, injection blocking, sensitive topic handling, schema fallback, or ungrounded hallucination fallback). The 2 false negatives represent deliberate failure edge cases (I13 adversarial roleplay prompt injection and O08 ungrounded hallucination with lexical overlap) included to analyze system boundaries."
+}

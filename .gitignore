@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Nn]on-[Aa][Ss][Cc][Ii][Ii]*
+
+# Temporary scratch and local environment shims
+powershell.bat
+work/
+scratch/
+*.tmp
+*.log
+
+# Assignment question brief and duplicate / archive files
+assignment_brief.pdf
+assignment_requirements.md
+evaluation_report.pdf
+*.zip
