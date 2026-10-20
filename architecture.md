@@ -8,6 +8,10 @@ This document describes the architectural design, data flow, and component bound
 
 ```mermaid
 flowchart TD
+    %% Plain Black and White Styling
+    classDef default fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000;
+    linkStyle default stroke:#000000,stroke-width:1.5px;
+
     subgraph Client ["User Layer"]
         A[Student User Query]
     end
@@ -64,6 +68,13 @@ flowchart TD
     N -->|Verified & Grounded| O
     G --> O
     H --> O
+
+    style Client fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    style InputGuardrails fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    style DecisionRouter fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    style ModelLayer fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    style OutputGuardrails fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    style FinalOutput fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
 ```
 
 ---

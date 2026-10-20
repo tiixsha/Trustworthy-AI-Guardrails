@@ -15,6 +15,9 @@ To mitigate these risks, I adopted a **defense-in-depth architecture** that part
 
 ```mermaid
 flowchart TD
+    classDef default fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000;
+    linkStyle default stroke:#000000,stroke-width:1.5px;
+
     User([Student User Query]) --> InputStage[Stage 1: Input Guardrails]
     
     subgraph InputStage [Input Guardrails Stage]
@@ -36,6 +39,9 @@ flowchart TD
     
     OutputStage -->|Validation Failure / Hallucination| FallbackResponse
     OutputStage -->|Verified & Safe| FinalOutput([Display Response to User])
+
+    style InputStage fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    style OutputStage fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
 ```
 
 ### Component Interaction and Staging Rationale
